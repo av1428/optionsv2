@@ -1,0 +1,13 @@
+streamlit
+pandas
+numpy
+plotly
+yfinance
+pydantic-settings
+python-dotenv
+fastapi
+uvicorn
+requests
+pydantic
+httpx
+finvizfinance

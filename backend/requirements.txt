@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+requests
+pandas
+numpy
+python-dotenv
+pydantic
+httpx
+finvizfinance
+yfinance
+ta-lib

@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  stockwebapp:
+    build: .
+    container_name: stockwebapp
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    volumes:
+      - ./:/app
+    restart: unless-stopped

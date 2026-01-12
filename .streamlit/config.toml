@@ -1,0 +1,14 @@
+[theme]
+base="dark"
+primaryColor="#3b82f6"
+backgroundColor="#0b1120"
+secondaryBackgroundColor="#1e293b"
+textColor="#f8fafc"
+font="sans serif"
+
+[client]
+toolbarMode = "viewer" # Hides the toolbar for viewers (still visible to you as admin)
+showErrorDetails = false
+
+[browser]
+gatherUsageStats = false
