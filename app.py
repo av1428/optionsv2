@@ -2,7 +2,13 @@ import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 import numpy as np
-from datetime import datetime
+import sys
+import os
+
+# Fix for Streamlit Cloud: Ensure root directory is in sys.path
+root_path = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(root_path)
+
 try:
     from backend.app.strategies.scanner import options_scanner
     from backend.app.core.config import settings
