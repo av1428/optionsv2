@@ -3,8 +3,20 @@ import pandas as pd
 import plotly.graph_objects as go
 import numpy as np
 from datetime import datetime
-from backend.app.strategies.scanner import options_scanner
-from backend.app.core.config import settings
+try:
+    from backend.app.strategies.scanner import options_scanner
+    from backend.app.core.config import settings
+except ImportError as e:
+    import streamlit as st
+    st.error(f"Import Error: {e}")
+    st.info("Check requirements.txt and file structure.")
+    st.stop()
+except Exception as e:
+    import streamlit as st
+    st.error(f"Critical System Error: {e}")
+    import traceback
+    st.text(traceback.format_exc())
+    st.stop()
 
 # --- Page Config ---
 st.set_page_config(
